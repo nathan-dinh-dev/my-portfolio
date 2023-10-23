@@ -111,3 +111,55 @@
     z-index: 700;
   }
 }
+
+/* Media query for Surface Pro 7 screen size */
+@media screen and (max-width: 915px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+/* Media query for Ipad Air screen size */
+@media screen and (max-width: 825px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+
+  .profile-options {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+  }
+
+  .profile-details {
+    margin: 25px 0 0;
+  }
+
+  .profile-options .highlighted-btn {
+    margin: 0 !important;
+  }
+
+  .profile-options .profile-details-role {
+    text-align: center;
+  }
+}
+
+/* Media query for Iphone SE screen size */
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+
+  .profile-details {
+    width: 95%;
+  }
+}
