@@ -5,8 +5,7 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  /* background-image: url("../../assets/Home/bg.jpg"); */
-  background-color: rgb(32, 32, 83);
+  /* background-color: rgb(32, 32, 83); */
 }
 
 .profile-parent {
@@ -69,7 +68,7 @@
 .profile-picture-background {
   height: 92%;
   width: 92%;
-  background-image: url("../../assets/Home/profilephoto.jpg");
+  background-image: url("../../../assets/Home/profilephoto.jpg");
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
