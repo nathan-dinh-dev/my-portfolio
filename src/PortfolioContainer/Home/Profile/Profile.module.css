@@ -112,7 +112,7 @@
 }
 
 /* Media query for Surface Pro 7 screen size */
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 970px) {
   .profile-picture {
     height: 320px;
     width: 320px;
