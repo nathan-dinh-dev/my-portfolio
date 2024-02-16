@@ -101,3 +101,23 @@
     opacity: 1;
   }
 }
+
+/*ANIMATION*/
+
+/* .animated-text span {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#01aced, #01aced);
+  -webkit-background-clip: text;
+  background-clip: none;
+  background-position: -500px 0;
+  animation: backcolor 5s linear infinite;
+}
+
+@keyframes backcolor {
+  100% {
+    -webkit-text-stroke: 1px #01aced;
+    background-position: 0 0;
+  }
+} */

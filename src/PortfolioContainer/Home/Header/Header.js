@@ -75,7 +75,7 @@ const Header = () => {
           />
         </div>
 
-        <div className={styles["header-logo"]}>
+        <div className={`${styles["header-logo"]} ${styles["animated-text"]}`}>
           <span>Nathan~</span>
         </div>
         <div
