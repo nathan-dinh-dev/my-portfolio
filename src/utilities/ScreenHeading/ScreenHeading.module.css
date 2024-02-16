@@ -37,12 +37,28 @@
   height: 10px;
   width: 100%;
   position: absolute;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .seperator-blob div {
   width: 35px;
+  height: 100%;
   border-radius: 10px;
   background-color: var(--dark-orange);
+}
+
+/* ANIMATION */
+
+.seperator-blob {
+  animation: backcolor 2s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100% {
+    left: calc(100% - 35px);
+  }
+  0% {
+    left: 0%;
+  }
 }
