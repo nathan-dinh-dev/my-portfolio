@@ -10,6 +10,8 @@ import styles from "./Testimonial.module.css";
 
 import { daniel_nguyen, richard_pham } from "../../assets/Testimonial";
 import { shape_background } from "../../assets/Home";
+import Footer from "../Home/Footer/Footer";
+import WaveBackground from "../../assets/wave-svg";
 
 const Testimonial = (props) => {
   let fadeInScreenHandler = (screen) => {
@@ -28,7 +30,7 @@ const Testimonial = (props) => {
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
-    autoplay: false,
+    autoplay: true,
     smartSpeed: 1000,
     responsive: {
       0: {
@@ -44,16 +46,13 @@ const Testimonial = (props) => {
   };
 
   return (
-    <>
+    <div id={props.id || ""}>
       <ScreenHeading
         title="Testimonial"
         subHeading="What My Co-workers Say About Me"
       />
 
-      <section
-        className={`${styles["testimonial-section"]}`}
-        id={props.id || ""}
-      >
+      <section className={`${styles["testimonial-section"]}`}>
         <div className="container">
           <div className="row">
             <OwlCarousel
@@ -156,10 +155,10 @@ const Testimonial = (props) => {
           </div>
         </div>
       </section>
-      <div className={styles["footer-image"]}>
-        <img src={shape_background} alt="no internet connection" />
+      <div className={styles["footer-svg"]}>
+        <WaveBackground />
       </div>
-    </>
+    </div>
   );
 };
 
