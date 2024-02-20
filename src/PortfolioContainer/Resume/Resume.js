@@ -1,7 +1,7 @@
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Resume.module.css";
 import {
   education_svg,
@@ -16,7 +16,7 @@ const Resume = (props) => {
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
   };
@@ -205,9 +205,16 @@ const Resume = (props) => {
     );
   };
 
+  useEffect(() => {
+    return () => {
+      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+      fadeInSubscription.unsubscribe();
+    };
+  }, [fadeInSubscription]);
+
   return (
     <div
-      className={`${styles["resume-container"]} screen-container`}
+      className={`${styles["resume-container"]} screen-container fade-in`}
       id={props.id || ""}
     >
       <div className={styles["resume-content"]}>

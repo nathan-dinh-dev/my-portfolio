@@ -6,7 +6,7 @@ import styles from "./AboutMe.module.css";
 
 const AboutMe = (props) => {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
   };
@@ -37,9 +37,16 @@ const AboutMe = (props) => {
     ));
   };
 
+  useEffect(() => {
+    return () => {
+      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+      fadeInSubscription.unsubscribe();
+    };
+  }, [fadeInSubscription]);
+
   return (
     <div
-      className={`${styles["about-me-container"]} screen-container`}
+      className={`${styles["about-me-container"]} screen-container fade-in`}
       id={props.id || ""}
     >
       <div className={styles["about-me-parent"]}>

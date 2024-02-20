@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import {
-  TOTAL_SCREEENS,
+  TOTAL_SCREENS,
   GET_SCREEN_INDEX,
 } from "../../../utilities/commonUtils";
 import ScrollService from "../../../utilities/ScrollService";
@@ -20,11 +20,11 @@ const Header = () => {
   };
 
   let currentScreenSubscription =
-    ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
+    ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
 
   const getHeaderOptionsClasses = (index) => {
     let classes = styles["header-option"];
-    if (index < TOTAL_SCREEENS.length - 1)
+    if (index < TOTAL_SCREENS.length - 1)
       classes = classes + " " + styles["header-option-seperator"];
 
     if (selectedScreen === index)
@@ -34,7 +34,7 @@ const Header = () => {
   };
 
   const getHeaderOptions = () => {
-    return TOTAL_SCREEENS.map((screen, i) => (
+    return TOTAL_SCREENS.map((screen, i) => (
       <div
         key={screen.screen_name}
         className={getHeaderOptionsClasses(i)}

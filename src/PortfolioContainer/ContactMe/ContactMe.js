@@ -2,7 +2,7 @@ import styles from "./ContactMe.module.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { toast } from "react-toastify";
@@ -11,7 +11,7 @@ import Footer from "../Footer/Footer";
 
 const ContactMe = (props) => {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
   };
@@ -36,8 +36,6 @@ const ContactMe = (props) => {
   const messageHandler = (e) => {
     setMessage(e.target.value);
   };
-
-  console.log(name);
 
   const formSubmitHandler = async (e) => {
     e.preventDefault();
@@ -74,8 +72,15 @@ const ContactMe = (props) => {
     deleteSpeed: 40,
   });
 
+  useEffect(() => {
+    return () => {
+      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+      fadeInSubscription.unsubscribe();
+    };
+  }, [fadeInSubscription]);
+
   return (
-    <div className={`${styles["main-container"]}`} id={props.id || ""}>
+    <div className={`${styles["main-container"]} fade-in`} id={props.id || ""}>
       <ScreenHeading title="Contact Me" subHeading="Let's Keep In Touch" />
       <div className={`${styles["central-form"]}`}>
         <div className={`col ${styles["col"]}`}>
@@ -87,10 +92,10 @@ const ContactMe = (props) => {
           <a href="https://www.facebook.com/profile.php?id=100004020500449">
             <i className="fa fa-facebook-square" />
           </a>
-          <a href="https://www.instagram.com/instructor_ehizeex/">
+          <a href="https://www.instagram.com/nghiadinh.h/">
             <i className="fa fa-instagram" />
           </a>
-          <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
+          <a href="https://www.linkedin.com/in/dinh97/">
             <i className="fa fa-linkedin" />
           </a>
         </div>

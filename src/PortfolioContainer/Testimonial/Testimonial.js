@@ -7,15 +7,14 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 
 import styles from "./Testimonial.module.css";
+import { useEffect } from "react";
 
 import { daniel_nguyen, richard_pham } from "../../assets/Testimonial";
-import { shape_background } from "../../assets/Home";
-import Footer from "../Home/Footer/Footer";
 import WaveBackground from "../../assets/wave-svg";
 
 const Testimonial = (props) => {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
   };
@@ -45,8 +44,15 @@ const Testimonial = (props) => {
     },
   };
 
+  useEffect(() => {
+    return () => {
+      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+      fadeInSubscription.unsubscribe();
+    };
+  }, [fadeInSubscription]);
+
   return (
-    <div id={props.id || ""}>
+    <div className="fade-in" id={props.id || ""}>
       <ScreenHeading
         title="Testimonial"
         subHeading="What My Co-workers Say About Me"

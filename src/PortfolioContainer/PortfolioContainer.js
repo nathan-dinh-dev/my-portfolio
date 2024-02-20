@@ -1,9 +1,9 @@
-import { TOTAL_SCREEENS } from "../utilities/commonUtils";
+import { TOTAL_SCREENS } from "../utilities/commonUtils";
 import styles from "./PortfolioContainer.module.css";
 
 const PorfolioContainer = () => {
   const mapAllScreens = () => {
-    return TOTAL_SCREEENS.map((screen) =>
+    return TOTAL_SCREENS.map((screen) =>
       screen.component ? (
         <screen.component
           screenName={screen.screen_name}
