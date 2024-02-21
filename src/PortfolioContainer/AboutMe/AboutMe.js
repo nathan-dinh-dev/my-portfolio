@@ -15,7 +15,8 @@ const AboutMe = (props) => {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "abcxyz",
+    description:
+      "Enthusiastic and dedicated software engineering student with a passion for problem-solving and technology. Eager to leverage theoretical knowledge and hands-on experience to contribute to innovative projects. Proficient in various programming languages and adept at collaborating in team environments.",
     highlights: {
       bullets: [
         "Full Stack web development",

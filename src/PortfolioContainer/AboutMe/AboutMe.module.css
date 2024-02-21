@@ -29,6 +29,7 @@
   width: 48%;
   text-align: justify;
   padding: 30px;
+  padding-top: 3rem;
 }
 
 .about-me-description {
@@ -36,7 +37,7 @@
 }
 
 .about-me-highlights {
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 .highlight-heading {
