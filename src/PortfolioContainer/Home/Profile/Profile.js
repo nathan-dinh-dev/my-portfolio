@@ -1,5 +1,6 @@
 import styles from "./Profile.module.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import ScrollService from "../../../utilities/ScrollService";
 
 const Profile = () => {
   const [typeEffect] = useTypewriter({
@@ -21,20 +22,20 @@ const Profile = () => {
         <div className={styles["profile-details"]}>
           <div className={styles.colz}>
             <div className={styles["colz-icon"]}>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=100004020500449">
                 <i className="fa fa-facebook-square"></i>
               </a>
-              <a href="#">
-                <i className="fa fa-google-plus-square"></i>
-              </a>
-              <a href="#">
+              <a href="https://www.instagram.com/nghiadinh.h/">
                 <i className="fa fa-instagram"></i>
               </a>
-              <a href="#">
-                <i className="fa fa-youtube-square"></i>
+              <a href="https://github.com/nathan-dinh-dev">
+                <i className="fa fa-github-square"></i>
               </a>
-              <a href="#">
-                <i className="fa fa-twitter-square"></i>
+              <a href="https://www.linkedin.com/in/dinh97/">
+                <i className="fa fa-linkedin-square"></i>
+              </a>
+              <a href="mailto:trungnghia.dinh@sjsu.edu">
+                <i className="fa fa-envelope"></i>
               </a>
             </div>
           </div>
@@ -62,11 +63,14 @@ const Profile = () => {
           </div>
 
           <div className={styles["profile-options"]}>
-            <button className={`btn primary-btn ${styles.btn}`}>
+            <button
+              className={`btn primary-btn ${styles.btn}`}
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+            >
               {""}
               Hire Me{" "}
             </button>
-            <a href="resume.pdf" download="resume.pdf">
+            <a href="resume.pdf" download="Nathan Dinh resume.pdf">
               <button
                 className={`btn highlighted-btn ${styles["highlighted-btn"]} ${styles.btn}`}
               >

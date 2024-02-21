@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={styles["scroll-container"]}>
       <button
-        className="btn-scroll"
+        className={`btn-scroll ${styles["btn-scroll"]}`}
         onClick={() => ScrollService.scrollHandler.scrollToHome()}
       >
         {" "}

@@ -98,6 +98,12 @@ const ContactMe = (props) => {
           <a href="https://www.linkedin.com/in/dinh97/">
             <i className="fa fa-linkedin" />
           </a>
+          <a href="https://github.com/nathan-dinh-dev">
+            <i className="fa fa-github-square"></i>
+          </a>
+          <a href="mailto:trungnghia.dinh@sjsu.edu">
+            <i className="fa fa-envelope"></i>
+          </a>
         </div>
 
         <div className={`${styles["back-form"]}`}>
