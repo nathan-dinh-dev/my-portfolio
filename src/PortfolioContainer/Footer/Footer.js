@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Footer.module.css";
 import ScrollService from "../../utilities/ScrollService";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className={styles["scroll-container"]}>
+    <div className={`${styles["scroll-container"]} ${props.className}`}>
       <button
         className={`btn-scroll ${styles["btn-scroll"]}`}
         onClick={() => ScrollService.scrollHandler.scrollToHome()}

@@ -138,7 +138,11 @@ button .loading img {
   transform: scale(1.5);
 }
 
-@media screen and (min-width: 940px) {
+.scroll-up {
+  margin: -3.7rem 3rem 0 0;
+}
+
+@media screen and (max-width: 2000px) {
   .back-form {
     max-width: 1100px;
     margin: 0 auto;
@@ -157,6 +161,71 @@ button .loading img {
     flex: 0.9;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .scroll-up {
+    margin: -3.7rem 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .central-form {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .central-form {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .back-form input,
+  textarea {
+    font-size: 15px;
+  }
+
+  .back-form {
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .scroll-up {
+    margin: -3.7rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .scroll-up {
+    position: relative;
+    left: 35%;
+    bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .central-form {
+    max-width: 600px;
+  }
+
+  .img-back {
+    display: none;
+  }
+
+  .back-form {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-container {
+    margin: 30px 15px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .central-form h2 {
     font-size: 16px;

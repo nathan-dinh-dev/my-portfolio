@@ -139,7 +139,7 @@ const ContactMe = (props) => {
           </form>
         </div>
       </div>
-      <Footer />
+      <Footer className={styles["scroll-up"]} />
     </div>
   );
 };

@@ -33,7 +33,7 @@
 }
 
 .resume-description-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .resume-details-carousal {
@@ -94,9 +94,12 @@
 .resume-screen-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  /* Fixed space problem when scrolling */
+  justify-content: space-between;
   height: 360px;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .resume-heading {
@@ -120,6 +123,10 @@
   max-width: 100%;
 }
 
+.experience-container {
+  margin-bottom: 2rem;
+}
+
 .heading-bullet {
   position: absolute;
   left: -30px;
@@ -138,7 +145,7 @@
 }
 
 .resume-heading-description {
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
 }
 

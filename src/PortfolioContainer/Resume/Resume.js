@@ -94,10 +94,25 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className={styles["resume-screen-container"]} key="education">
       <ResumeHeading
-        heading={"University SJSU"}
-        subHeading="BS"
-        fromDate="2022"
-        toDate="2023"
+        heading={"San Jose State University"}
+        subHeading="Bachelor of Science"
+        description="Software Engineering"
+        fromDate="2023"
+        toDate="Expected 2025"
+      />
+      <ResumeHeading
+        heading={"Bach Khoa University, Vietnam"}
+        subHeading="Bachelor of Science"
+        description="Electrical Engineering"
+        fromDate="2015"
+        toDate="2019"
+      />
+      <ResumeHeading
+        heading={"De Anza College"}
+        subHeading="Associate of Science"
+        description="Computer Science"
+        fromDate="2021"
+        toDate="2022"
       />
     </div>,
 
@@ -105,23 +120,48 @@ const Resume = (props) => {
       <div className={styles["experience-container"]}>
         <ResumeHeading
           heading={"Pho Ha Noi"}
-          subHeading="IT"
-          fromDate="2018"
+          subHeading="IT Specialist"
+          fromDate="2021"
           toDate="present"
         />
         <div className={styles["experience-description"]}>
           <span className={styles["resume-description-text"]}>
-            Crrenlt abcxyz
+            With a keen focus on enhancing operational efficiency and customer
+            satisfaction, I bring comprehensive IT expertise tailored for the
+            restaurant industry. Proficient in POS integration and maintenance,
+            I optimize order processing and inventory management systems. My
+            skills extend to website design, ensuring seamless online ordering
+            experiences, and menu creation to showcase offerings effectively.
+            Leveraging JavaScript, I develop applications for streamlined
+            inventory management on platforms like Google Sheets. Additionally,
+            I excel in networking solutions, specifically configuring kitchen
+            printers for timely order dispatch. My commitment to innovation and
+            problem-solving ensures the seamless integration of technology to
+            elevate restaurant operations.
           </span>
         </div>
-
+      </div>
+      <div className={styles["experience-container"]}>
+        <ResumeHeading
+          heading={"Pho Ha Noi"}
+          subHeading="IT Specialist"
+          fromDate="2021"
+          toDate="present"
+        />
         <div className={styles["experience-description"]}>
           <span className={styles["resume-description-text"]}>
-            - POS integrate
-          </span>
-          <br />
-          <span className={styles["resume-description-text"]}>
-            - Website maintanance
+            With a keen focus on enhancing operational efficiency and customer
+            satisfaction, I bring comprehensive IT expertise tailored for the
+            restaurant industry. Proficient in POS integration and maintenance,
+            I optimize order processing and inventory management systems. My
+            skills extend to website design, ensuring seamless online ordering
+            experiences, and menu creation to showcase offerings effectively.
+            Leveraging JavaScript, I develop applications for streamlined
+            inventory management on platforms like Google Sheets. Additionally,
+            I excel in networking solutions, specifically configuring kitchen
+            printers for timely order dispatch. My commitment to innovation and
+            problem-solving ensures the seamless integration of technology to
+            elevate restaurant operations.
           </span>
         </div>
       </div>
