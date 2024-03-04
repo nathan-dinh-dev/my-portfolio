@@ -32,7 +32,7 @@ const Resume = (props) => {
           <span>{props.heading ? props.heading : ""}</span>
           {props.fromDate && props.toDate ? (
             <div className={styles["heading-date"]}>
-              {props.fromDate + "-" + props.toDate}
+              {props.fromDate + " - " + props.toDate}
             </div>
           ) : (
             <div></div>
@@ -64,30 +64,54 @@ const Resume = (props) => {
     { skill: "Python", ratingPercentage: 75 },
     { skill: "Java", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
+    { skill: "Express JS", ratingPercentage: 70 },
     { skill: "Node JS", ratingPercentage: 85 },
-    { skill: "Mongo DB", ratingPercentage: 70 },
+    { skill: "SQL", ratingPercentage: 70 },
     { skill: "HTML/CSS", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "abc",
-      subHeading: "xyz",
+      duration: { fromDate: "Dec 2020", toDate: "Feb 2021" },
+      description: (
+        <span>
+          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+        </span>
+      ),
+      subHeading:
+        "Technology Used: React, Express, RxJs, NodeMailer, Bootstrap",
     },
     {
-      title: "Agriculture Solution",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "abc",
-      subHeading: "xyz",
+      title: "Food Order Application",
+      duration: { fromDate: "Jun 2023", toDate: "May 2024" },
+      description: (
+        <span>
+          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+        </span>
+      ),
+      subHeading: "Technology Used: React, MySQL, Stripe, Strapi, Docker",
     },
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "abc",
-      subHeading: "Technology Used: React JS, Bootstrap",
+      title: "City of Williamston Website",
+      duration: { fromDate: "Oct 2023", toDate: "Dec 2023" },
+      description: (
+        <span>
+          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+        </span>
+      ),
+      subHeading:
+        "Technology Used: React, Bootstrap, NodeMailer, Express, Docker",
+    },
+    {
+      title: "Devmint Market",
+      duration: { fromDate: "Oct 2022", toDate: "Dec 2022" },
+      description: (
+        <span>
+          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+        </span>
+      ),
+      subHeading: "Technology Used: React, Framer Motion, Express, Docker",
     },
   ];
 
@@ -125,44 +149,34 @@ const Resume = (props) => {
           toDate="present"
         />
         <div className={styles["experience-description"]}>
-          <span className={styles["resume-description-text"]}>
-            With a keen focus on enhancing operational efficiency and customer
-            satisfaction, I bring comprehensive IT expertise tailored for the
-            restaurant industry. Proficient in POS integration and maintenance,
-            I optimize order processing and inventory management systems. My
-            skills extend to website design, ensuring seamless online ordering
-            experiences, and menu creation to showcase offerings effectively.
-            Leveraging JavaScript, I develop applications for streamlined
-            inventory management on platforms like Google Sheets. Additionally,
-            I excel in networking solutions, specifically configuring kitchen
-            printers for timely order dispatch. My commitment to innovation and
-            problem-solving ensures the seamless integration of technology to
-            elevate restaurant operations.
-          </span>
+          <ul className={styles["resume-description-text"]}>
+            <li>
+              Integrated and troubleshoot POS systems to resolve technical
+              issues promptly and minimize downtime.
+            </li>
+            <li>
+              Implemented automated inventory management and order processing
+              systems.
+            </li>
+            <li>Experienced in network management and troubleshooting.</li>
+            <li>
+              Managed restaurant website, overseeing menu updates, promotions,
+              and newsletter distribution to customers.
+            </li>
+          </ul>
         </div>
       </div>
       <div className={styles["experience-container"]}>
         <ResumeHeading
-          heading={"Pho Ha Noi"}
-          subHeading="IT Specialist"
-          fromDate="2021"
-          toDate="present"
+          heading={"De Anza College"}
+          subHeading="Tutor"
+          fromDate="06/2022"
+          toDate="09/2022"
         />
         <div className={styles["experience-description"]}>
-          <span className={styles["resume-description-text"]}>
-            With a keen focus on enhancing operational efficiency and customer
-            satisfaction, I bring comprehensive IT expertise tailored for the
-            restaurant industry. Proficient in POS integration and maintenance,
-            I optimize order processing and inventory management systems. My
-            skills extend to website design, ensuring seamless online ordering
-            experiences, and menu creation to showcase offerings effectively.
-            Leveraging JavaScript, I develop applications for streamlined
-            inventory management on platforms like Google Sheets. Additionally,
-            I excel in networking solutions, specifically configuring kitchen
-            printers for timely order dispatch. My commitment to innovation and
-            problem-solving ensures the seamless integration of technology to
-            elevate restaurant operations.
-          </span>
+          <ul className={styles["resume-description-text"]}>
+            <li>Assisted students with programming and software questions.</li>
+          </ul>
         </div>
       </div>
     </div>,
@@ -196,9 +210,22 @@ const Resume = (props) => {
       ))}
     </div>,
     <div className={styles["resume-screen-container"]} key="interests">
-      <ResumeHeading heading="Teaching" description="abcxyz" />
-      <ResumeHeading heading="Teaching" description="abcxyz" />
-      <ResumeHeading heading="Teaching" description="abcxyz" />
+      <ResumeHeading
+        heading="Sports"
+        description={
+          <ul>
+            <li>
+              Soccer: Captain of local amateur team, emphasizing teamwork and
+              leadership skills.
+            </li>
+            <li>
+              Running: Completed multiple half-marathons, highlighting
+              perseverance and goal-setting abilities.
+            </li>
+          </ul>
+        }
+      />
+      <ResumeHeading heading="Travel" description="abcxyz" />
     </div>,
   ];
 

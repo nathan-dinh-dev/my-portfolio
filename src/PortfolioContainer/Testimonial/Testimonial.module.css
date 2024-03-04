@@ -5,6 +5,7 @@
   background-attachment: fixed;
   position: relative;
   z-index: -1;
+  /* height: 600px; */
 }
 
 .testimonial-section::before {
