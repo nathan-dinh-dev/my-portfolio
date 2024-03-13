@@ -35,7 +35,8 @@ const Testimonial = (props) => {
     nav: false,
     dots: false,
     autoplay: true,
-    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    smartSpeed: 900,
     responsive: {
       0: {
         items: 1,
