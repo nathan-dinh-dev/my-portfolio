@@ -6,7 +6,7 @@
 .pnp.js
 
 # personal image
-/src/assets/Testimonial
+# /src/assets/Testimonial
 
 # testing
 /coverage
