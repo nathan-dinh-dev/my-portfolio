@@ -16,16 +16,16 @@ const AboutMe = (props) => {
 
   const SCREEN_CONSTANTS = {
     description:
-      "Enthusiastic and dedicated software engineering student with a passion for problem-solving and technology. Eager to leverage theoretical knowledge and hands-on experience to contribute to innovative projects. Proficient in various programming languages and adept at collaborating in team environments.",
+      "Enthusiastic and dedicated software engineering student with a fervent passion for problem-solving and technology. I am eager to leverage my comprehensive theoretical knowledge and hands-on experience to make meaningful contributions to innovative projects. Proficient in a variety of programming languages, I thrive in collaborative team environments and am committed to delivering exceptional results.",
     highlights: {
       bullets: [
-        "Full Stack web development",
+        "Full Stack Web Development",
         "Interactive Front End as per the design",
         "Redux for State Management",
         "Building Rest API",
         "Managing database",
       ],
-      heading: "Here are a few Highlights:",
+      heading: "Here are a few highlights:",
     },
   };
 

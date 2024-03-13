@@ -11,7 +11,6 @@
   display: flex;
   height: 360px;
   width: 1000px;
-  /* margin: 80px 0; */
 }
 
 .resume-bullets {
@@ -103,6 +102,10 @@
   overflow-y: scroll;
 }
 
+.resume-screen-container:last-child {
+  justify-content: space-around;
+}
+
 .resume-heading {
   display: flex;
   flex-direction: column;
@@ -136,6 +139,7 @@
   top: 5px;
   border-radius: 50%;
   background-color: #ff5823;
+  display: none;
 }
 
 .resume-sub-heading {

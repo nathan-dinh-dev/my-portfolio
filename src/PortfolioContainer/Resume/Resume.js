@@ -212,20 +212,16 @@ const Resume = (props) => {
     <div className={styles["resume-screen-container"]} key="interests">
       <ResumeHeading
         heading="Sports"
-        description={
-          <ul>
-            <li>
-              Soccer: Captain of local amateur team, emphasizing teamwork and
-              leadership skills.
-            </li>
-            <li>
-              Running: Completed multiple half-marathons, highlighting
-              perseverance and goal-setting abilities.
-            </li>
-          </ul>
-        }
+        description="Passionate about soccer, basketball, swimming, and badminton, finding joy in the camaraderie and physical challenges each sport offers."
       />
-      <ResumeHeading heading="Travel" description="abcxyz" />
+      <ResumeHeading
+        heading="Travel"
+        description="Enthusiastic about exploring diverse cultures, from Korea and Japan to Hawaii, Singapore, Vietnam, the UK, France, and Italy."
+      />
+      <ResumeHeading
+        heading="Music"
+        description="Cultivating a love for music, particularly VPop, Kpop, and US-UK genres, as a source of inspiration and cultural connection."
+      />
     </div>,
   ];
 
