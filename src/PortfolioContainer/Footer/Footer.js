@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import ScrollService from "../../utilities/ScrollService";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = (props) => {
   return (
@@ -10,7 +12,7 @@ const Footer = (props) => {
         onClick={() => ScrollService.scrollHandler.scrollToHome()}
       >
         {" "}
-        <i className="fa fa-arrow-up"></i>
+        <FontAwesomeIcon icon={faArrowUp} className={styles.icon} />{" "}
       </button>
     </div>
   );

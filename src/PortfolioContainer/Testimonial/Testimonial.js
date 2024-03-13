@@ -15,7 +15,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuoteLeft,
   faQuoteRight,
-  faQuoteRightAlt,
   faStar,
   faStarHalfAlt,
 } from "@fortawesome/free-solid-svg-icons";
@@ -34,9 +33,7 @@ const Testimonial = (props) => {
     loop: true,
     margin: 0,
     nav: false,
-    animateIn: "bounceInRight",
-    animateOut: "bounceOutRight",
-    dots: true,
+    dots: false,
     autoplay: true,
     smartSpeed: 1000,
     responsive: {
