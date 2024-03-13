@@ -11,6 +11,14 @@ import { useEffect } from "react";
 
 import { daniel_nguyen, richard_pham } from "../../assets/Testimonial";
 import WaveBackground from "../../assets/wave-svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faQuoteLeft,
+  faQuoteRight,
+  faQuoteRightAlt,
+  faStar,
+  faStarHalfAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Testimonial = (props) => {
   let fadeInScreenHandler = (screen) => {
@@ -25,7 +33,7 @@ const Testimonial = (props) => {
   const options = {
     loop: true,
     margin: 0,
-    nav: true,
+    nav: false,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -70,29 +78,55 @@ const Testimonial = (props) => {
                 <div className={styles["testi-item"]}>
                   <div className={styles["testi-comment"]}>
                     <p>
-                      <i
-                        className={`fa fa-quote-left ${styles["fa-quote-left"]}`}
+                      <FontAwesomeIcon
+                        icon={faQuoteLeft}
+                        className={styles["fa-quote-left"]}
                       />
-                      abcxyz
-                      <i
-                        className={`fa fa-quote-right ${styles["fa-quote-right"]}`}
+                      Nathan is a dedicated team player known for his attention
+                      to detail and problem-solving skills. Always ready to
+                      assist his colleagues, he brings positive energy to the
+                      workplace with his cheerful demeanor. His commitment to
+                      excellence shines through in all he does.
+                      <FontAwesomeIcon
+                        icon={faQuoteRight}
+                        className={styles["fa-quote-right"]}
                       />
                     </p>
                     <ul className={`stars list-unstyled ${styles["stars"]}`}>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStarHalfAlt}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                     </ul>
                   </div>
@@ -116,29 +150,55 @@ const Testimonial = (props) => {
                 <div className={styles["testi-item"]}>
                   <div className={styles["testi-comment"]}>
                     <p>
-                      <i
-                        className={`fa fa-quote-left ${styles["fa-quote-left"]}`}
+                      <FontAwesomeIcon
+                        className={styles["fa-quote-left"]}
+                        icon={faQuoteLeft}
                       />
-                      abcxyz
-                      <i
-                        className={`fa fa-quote-right ${styles["fa-quote-right"]}`}
+                      Nathan is a focused and supportive team member, renowned
+                      for his problem-solving abilities and positive attitude.
+                      His dedication to excellence is evident in every task he
+                      undertakes, and his willingness to help others makes him a
+                      valued asset to the team.
+                      <FontAwesomeIcon
+                        className={styles["fa-quote-right"]}
+                        icon={faQuoteRight}
                       />
                     </p>
                     <ul className={`stars list-unstyled ${styles["stars"]}`}>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                       <li>
-                        <i className="fa fa-star" />
+                        <FontAwesomeIcon
+                          icon={faStarHalfAlt}
+                          color="tomato"
+                          size="xs"
+                        />
                       </li>
                     </ul>
                   </div>

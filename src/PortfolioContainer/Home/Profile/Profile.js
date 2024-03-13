@@ -8,12 +8,12 @@ const Profile = () => {
       "Enthusiastic Dev 🤜",
       "Full Stack Developer 💻",
       "MERN Stack Dev 😎",
-      "Cross Platform Dev ",
-      "React/React Native Dev",
+      "Collaborative Team Player 🤝",
+      "Agile Cross-Platform Developer 🔄",
     ],
     loop: {},
-    typeSpeed: 80,
-    deleteSpeed: 40,
+    typeSpeed: 100,
+    deleteSpeed: 70,
   });
 
   return (
