@@ -89,16 +89,32 @@ const ContactMe = (props) => {
             <Cursor />
           </h2>
 
-          <a href="https://www.facebook.com/profile.php?id=100004020500449">
+          <a
+            href="https://www.facebook.com/profile.php?id=100004020500449"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-facebook-square" />
           </a>
-          <a href="https://www.instagram.com/nghiadinh.h/">
+          <a
+            href="https://www.instagram.com/nghiadinh.h/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-instagram" />
           </a>
-          <a href="https://www.linkedin.com/in/dinh97/">
+          <a
+            href="https://www.linkedin.com/in/dinh97/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-linkedin" />
           </a>
-          <a href="https://github.com/nathan-dinh-dev">
+          <a
+            href="https://github.com/nathan-dinh-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-github-square"></i>
           </a>
           <a href="mailto:trungnghia.dinh@sjsu.edu">

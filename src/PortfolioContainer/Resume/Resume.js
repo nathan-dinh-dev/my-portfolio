@@ -3,6 +3,7 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import { useState, useEffect } from "react";
 import styles from "./Resume.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   education_svg,
   experience_svg,
@@ -10,6 +11,7 @@ import {
   projects_svg,
   skills_svg,
 } from "../../assets/Resume";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
@@ -72,46 +74,115 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
+      title: (
+        <span>
+          Personal Portfolio Website{" "}
+          <a
+            href="https://github.com/nathan-dinh-dev/my-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="md" />
+          </a>
+        </span>
+      ),
       duration: { fromDate: "Dec 2020", toDate: "Feb 2021" },
       description: (
         <span>
-          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Video Demo
+          </a>
         </span>
       ),
       subHeading:
         "Technology Used: React, Express, RxJs, NodeMailer, Bootstrap",
     },
     {
-      title: "Food Order Application",
+      title: (
+        <span>
+          Food Order Application{" "}
+          <a
+            href="https://github.com/nathan-dinh-dev/food-order-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="md" />
+          </a>
+        </span>
+      ),
       duration: { fromDate: "Jun 2023", toDate: "May 2024" },
       description: (
         <span>
-          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Video Demo
+          </a>
         </span>
       ),
       subHeading: "Technology Used: React, MySQL, Stripe, Strapi, Docker",
     },
     {
-      title: "City of Williamston Website",
+      title: (
+        <span>
+          City of Williamston Website{" "}
+          <a
+            href="https://github.com/nathan-dinh-dev/city-of-williamston"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="md" />
+          </a>
+        </span>
+      ),
       duration: { fromDate: "Oct 2023", toDate: "Dec 2023" },
       description: (
         <span>
-          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Video Demo
+          </a>
         </span>
       ),
       subHeading:
         "Technology Used: React, Bootstrap, NodeMailer, Express, Docker",
     },
     {
-      title: "Devmint Market",
+      title: (
+        <span>
+          DevMint Market{" "}
+          <a
+            href="https://github.com/nathan-dinh-dev/devmint_market"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </span>
+      ),
       duration: { fromDate: "Oct 2022", toDate: "Dec 2022" },
       description: (
         <span>
-          <a href="">Live Demo</a> | <a href="">Video Demo</a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Video Demo
+          </a>
         </span>
       ),
-      subHeading: "Technology Used: React, Framer Motion, Express, Docker",
+      subHeading:
+        "Technology Used: React, Framer Motion, Howler, Express, Docker",
     },
   ];
 

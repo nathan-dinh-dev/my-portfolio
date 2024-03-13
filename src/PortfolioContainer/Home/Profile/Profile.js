@@ -12,8 +12,8 @@ const Profile = () => {
       "Agile Cross-Platform Developer 🔄",
     ],
     loop: {},
-    typeSpeed: 100,
-    deleteSpeed: 70,
+    typeSpeed: 50,
+    deleteSpeed: 30,
   });
 
   return (
@@ -22,16 +22,32 @@ const Profile = () => {
         <div className={styles["profile-details"]}>
           <div className={styles.colz}>
             <div className={styles["colz-icon"]}>
-              <a href="https://www.facebook.com/profile.php?id=100004020500449">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004020500449"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-facebook-square"></i>
               </a>
-              <a href="https://www.instagram.com/nghiadinh.h/">
+              <a
+                href="https://www.instagram.com/nghiadinh.h/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-instagram"></i>
               </a>
-              <a href="https://github.com/nathan-dinh-dev">
+              <a
+                href="https://github.com/nathan-dinh-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-github-square"></i>
               </a>
-              <a href="https://www.linkedin.com/in/dinh97/">
+              <a
+                href="https://www.linkedin.com/in/dinh97/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-linkedin-square"></i>
               </a>
               <a href="mailto:trungnghia.dinh@sjsu.edu">
@@ -70,7 +86,7 @@ const Profile = () => {
               {""}
               Hire Me{" "}
             </button>
-            <a href="resume.pdf" download="Nathan Dinh resume.pdf">
+            <a href="resume.pdf" download="Nathan Dinh Resume.pdf">
               <button
                 className={`btn highlighted-btn ${styles["highlighted-btn"]} ${styles.btn}`}
               >
