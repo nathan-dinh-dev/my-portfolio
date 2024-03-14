@@ -82,11 +82,11 @@ const Resume = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} size="md" />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </span>
       ),
-      duration: { fromDate: "Dec 2020", toDate: "Feb 2021" },
+      duration: { fromDate: "Dec 2023", toDate: "Mar 2024" },
       description: (
         <span>
           <a href="" target="_blank" rel="noopener noreferrer">
@@ -110,7 +110,7 @@ const Resume = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} size="md" />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </span>
       ),
@@ -137,7 +137,7 @@ const Resume = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} size="md" />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </span>
       ),
