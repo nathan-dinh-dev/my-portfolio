@@ -4,6 +4,7 @@
   right: 0;
   margin-right: 15px;
   overflow: hidden;
+  display: flex;
   flex-direction: column;
   margin-top: -50px;
   z-index: 100;
@@ -19,6 +20,9 @@
   border-radius: 10px;
   border: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-scroll .icon:hover,
