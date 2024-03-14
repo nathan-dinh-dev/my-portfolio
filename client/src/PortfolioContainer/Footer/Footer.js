@@ -11,7 +11,6 @@ const Footer = (props) => {
         className={`btn-scroll ${styles["btn-scroll"]}`}
         onClick={() => ScrollService.scrollHandler.scrollToHome()}
       >
-        {" "}
         <FontAwesomeIcon icon={faArrowUp} className={styles.icon} />{" "}
       </button>
     </div>

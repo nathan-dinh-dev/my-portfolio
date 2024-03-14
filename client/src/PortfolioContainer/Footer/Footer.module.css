@@ -18,6 +18,7 @@
   background-color: tomato;
   border-radius: 10px;
   border: none;
+  text-align: center;
 }
 
 .btn-scroll .icon:hover,
