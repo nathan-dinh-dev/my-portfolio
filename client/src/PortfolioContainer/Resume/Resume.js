@@ -89,10 +89,7 @@ const Resume = (props) => {
       duration: { fromDate: "Dec 2023", toDate: "Mar 2024" },
       description: (
         <span>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>{" "}
-          |{" "}
+          <a href="https://my-portfolio-s686.vercel.app/">Live Demo</a> |{" "}
           <a href="" target="_blank" rel="noopener noreferrer">
             Video Demo
           </a>
@@ -172,7 +169,11 @@ const Resume = (props) => {
       duration: { fromDate: "Oct 2022", toDate: "Dec 2022" },
       description: (
         <span>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://devmintmarket.s3-website.us-east-2.amazonaws.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live Demo
           </a>{" "}
           |{" "}
@@ -215,7 +216,7 @@ const Resume = (props) => {
       <div className={styles["experience-container"]}>
         <ResumeHeading
           heading={"Pho Ha Noi"}
-          subHeading="IT Specialist"
+          subHeading="IT Consultant"
           fromDate="2021"
           toDate="present"
         />

@@ -56,11 +56,41 @@
   }
 }
 
+@media screen and (max-width: 1025px) {
+  .scroll-container {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .scroll-container {
+    top: 23%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .scroll-container {
+    top: 27%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .scroll-container button {
     background: transparent;
   }
   .scroll-container {
     right: -3%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .scroll-container {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .scroll-container {
+    right: -9%;
   }
 }
