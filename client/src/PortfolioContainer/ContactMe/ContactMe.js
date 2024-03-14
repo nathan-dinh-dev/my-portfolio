@@ -51,6 +51,10 @@ const ContactMe = (props) => {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
         setBool(false);
+
+        setTimeout(() => {
+          setBanner("");
+        }, 1500);
       } else if (res.status === 200) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
@@ -59,9 +63,20 @@ const ContactMe = (props) => {
         setName("");
         setEmail("");
         setMessage("");
+
+        setTimeout(() => {
+          setBanner("");
+        }, 1500);
       }
     } catch (error) {
       console.log(error);
+      setBanner("Mailing server connection error!");
+      toast.error("Mailing server connection error!");
+      setBool(false);
+
+      setTimeout(() => {
+        setBanner("");
+      }, 1500);
     }
   };
 
@@ -131,18 +146,27 @@ const ContactMe = (props) => {
           <form onSubmit={formSubmitHandler} className={styles["form"]}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
-            <input type="text" onChange={nameHandler} value={name} />
+            <input type="text" onChange={nameHandler} value={name} required />
 
             <label htmlFor="email">Email</label>
-            <input type="email" onChange={emailHandler} value={email} />
+            <input
+              type="email"
+              onChange={emailHandler}
+              value={email}
+              required
+            />
 
             <label htmlFor="message">Message</label>
-            <textarea type="text" onChange={messageHandler} value={message} />
+            <textarea
+              type="text"
+              onChange={messageHandler}
+              value={message}
+              required
+            />
 
             <div className="send-btn">
               <button type="submit">
-                send
-                <i className="fa fa-paper-plane" />
+                Send <i className="fa fa-paper-plane" />
                 {bool ? (
                   <b className={`${styles["loading"]}`}>
                     <img src={loading_gif} alt="image not responding" />
