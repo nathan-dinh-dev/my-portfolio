@@ -46,7 +46,10 @@ const ContactMe = (props) => {
         message,
       };
       setBool(true);
-      const res = await axios.post(`/contact`, data);
+      const res = await axios.post(
+        `https://portfolio-mailing-server.onrender.com/contact`,
+        data
+      );
       if (name.length === 0 || email.length === 0 || message.length === 0) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
