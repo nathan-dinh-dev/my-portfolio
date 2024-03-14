@@ -81,6 +81,7 @@ const Resume = (props) => {
             href="https://github.com/nathan-dinh-dev/my-portfolio"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles["project-github"]}
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -89,7 +90,13 @@ const Resume = (props) => {
       duration: { fromDate: "Dec 2023", toDate: "Mar 2024" },
       description: (
         <span>
-          <a href="https://my-portfolio-s686.vercel.app/">Live Demo</a> |{" "}
+          <a
+            className={styles["live-demo-portfolio"]}
+            onClick={() => ScrollService.scrollHandler.scrollToHome()}
+          >
+            Live Demo
+          </a>{" "}
+          |{" "}
           <a href="" target="_blank" rel="noopener noreferrer">
             Video Demo
           </a>
@@ -106,6 +113,7 @@ const Resume = (props) => {
             href="https://github.com/nathan-dinh-dev/food-order-app"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles["project-github"]}
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -133,6 +141,7 @@ const Resume = (props) => {
             href="https://github.com/nathan-dinh-dev/city-of-williamston"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles["project-github"]}
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -161,6 +170,7 @@ const Resume = (props) => {
             href="https://github.com/nathan-dinh-dev/devmint_market"
             target="_blank"
             rel="noopener noreferrer"
+            className={styles["project-github"]}
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -169,6 +179,10 @@ const Resume = (props) => {
       duration: { fromDate: "Oct 2022", toDate: "Dec 2022" },
       description: (
         <span>
+          <p>
+            (not responsive - only for 1920x1080 resolutions with 100% zoom
+            scale)
+          </p>
           <a
             href="http://devmintmarket.s3-website.us-east-2.amazonaws.com/"
             target="_blank"
@@ -177,7 +191,11 @@ const Resume = (props) => {
             Live Demo
           </a>{" "}
           |{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.youtube.com/watch?v=Pkrg4p-1nW8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Video Demo
           </a>
         </span>
@@ -271,14 +289,16 @@ const Resume = (props) => {
     </div>,
     <div className={styles["resume-screen-container"]} key="projects">
       {projectsDetails.map((projectDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectDetails.title}
-          subHeading={projectDetails.subHeading}
-          description={projectDetails.description}
-          fromDate={projectDetails.duration.fromDate}
-          toDate={projectDetails.duration.toDate}
-        />
+        <div className={styles["resume-heading-styles"]}>
+          <ResumeHeading
+            key={index}
+            heading={projectDetails.title}
+            subHeading={projectDetails.subHeading}
+            description={projectDetails.description}
+            fromDate={projectDetails.duration.fromDate}
+            toDate={projectDetails.duration.toDate}
+          />
+        </div>
       ))}
     </div>,
     <div className={styles["resume-screen-container"]} key="interests">

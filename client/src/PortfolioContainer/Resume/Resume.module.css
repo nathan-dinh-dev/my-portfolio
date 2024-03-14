@@ -142,6 +142,24 @@
   display: none;
 }
 
+.resume-heading-styles {
+  margin-bottom: 1rem;
+}
+
+.live-demo-portfolio {
+  color: #007bff !important;
+  cursor: pointer;
+}
+
+.live-demo-portfolio:hover {
+  color: #0056b3 !important;
+  text-decoration: underline !important;
+}
+
+.project-github {
+  color: purple;
+}
+
 .resume-sub-heading {
   font-size: 14px;
   font-family: "Poppins SemiBold";
